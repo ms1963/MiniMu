@@ -2,18 +2,12 @@ MiniMu
 ======
 
 Ein Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalität von ANTLR 4 demonstriert.
-Um das MiniMu-Demo-Programm
+Um das MiniMu-Demo-Programm test.minimu
 
-#Datei: test.minimu
-
-# Erst prüfen wir boole'sche Operationen
 
 b1 = 10 * 3 > 5 * 5;
 b2 =  b1 && true;
 write "b1 = b2 && true == " + b2;
-
-# Prüfung von Zahlenausdrücken
-
 n = (3 * 4 + 6) / 9;
 m = 4*4 - 3*3;
 
