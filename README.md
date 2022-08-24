@@ -5,6 +5,8 @@ Ein Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalitä
 Um das MiniMu-Demo-Programm test.minimu
 
 
+
+
 b1 = 10 * 3 > 5 * 5;
 
 b2 =  b1 && true;
@@ -20,11 +22,17 @@ write "n == " + n;
 write "m == " + m;
 
 
+
+
 zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
+
+
 
 mvn clean install
 
 mvn -q exec:java
+
+
 
 Ergebnis der Programmausführung ist:
 
