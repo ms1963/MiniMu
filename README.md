@@ -5,7 +5,7 @@ Ein Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalitä
 
 Um das MiniMu-Demo-Programm
 
---------------------------------------------------------------------------
+
 # Datei: test.minimu
 
 # Erst prüfen wir boole'sche Operationen
@@ -21,7 +21,7 @@ m = 4*4 - 3*3;
 
 write "n == " + n;
 write "m == " + m;
---------------------------------------------------------------------------
+
 
 zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
 
@@ -31,10 +31,10 @@ mvn -q exec:java
 
 Ergebnis der Programmausführung ist:
 
---------------------------------------------------------------------------
+
 parsing: src/main/minimu/test.minimu
 b1 = b2 && true == true
 n == 2.0
 m == 7.0
---------------------------------------------------------------------------
+
 
