@@ -1,12 +1,10 @@
-iniMu
+MiniMu
 ======
 
 Ein Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalität von ANTLR 4 demonstriert.
-
 Um das MiniMu-Demo-Programm
 
-
-# Datei: test.minimu
+#Datei: test.minimu
 
 # Erst prüfen wir boole'sche Operationen
 
@@ -22,10 +20,7 @@ m = 4*4 - 3*3;
 write "n == " + n;
 write "m == " + m;
 
-
 zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
-
-
 mvn clean install
 mvn -q exec:java
 
