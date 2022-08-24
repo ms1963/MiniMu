@@ -2,7 +2,7 @@ MiniMu
 ======
 
 Ein Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalität von ANTLR 4 demonstriert.
-Um das MiniMu-Demo-Programm test.minimu
+Um das MiniMu-Demo-Programm test.minimu ...
 
 
 
@@ -24,7 +24,7 @@ write "m == " + m;
 
 
 
-zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
+... zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
 
 
 
@@ -34,7 +34,7 @@ mvn -q exec:java
 
 
 
-Ergebnis der Programmausführung ist:
+Ergebnis der Programmausführung ist: -->
 
 
 parsing: src/main/minimu/test.minimu
