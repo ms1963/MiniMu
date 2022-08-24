@@ -1,52 +1,40 @@
-Mu
-==
+iniMu
+======
 
-A small expression parser, using ANTLR 4. It supports most basic operators
-and `while`- and `log`- (print) statements. It is just a basic
-demonstration of how to use the `-visitor` functionality of ANTLR 4.
+Ein Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalität von ANTLR 4 demonstriert.
 
-To run [the demo script](https://github.com/bkiers/Mu/blob/master/src/main/mu/test.mu):
+Um das MiniMu-Demo-Programm
 
-```
-n = 9;
+--------------------------------------------------------------------------
+# Datei: test.minimu
 
-while n > 0 {
+# Erst prüfen wir boole'sche Operationen
 
-  # expressions can be surrounded by parenthesis, of course
-  if (n % 2 == 0) {
-    log n + " -> even";
-  }
-  else {
-    log n + " -> odd";
-  }
+b1 = 10 * 3 > 5 * 5;
+b2 =  b1 && true;
+write "b1 = b2 && true == " + b2;
 
-  n = n - 1;
-}
-```
+# Prüfung von Zahlenausdrücken
 
-do:
+n = (3 * 4 + 6) / 9;
+m = 4*4 - 3*3;
 
-```
-git clone git://github.com/bkiers/Mu.git
+write "n == " + n;
+write "m == " + m;
+--------------------------------------------------------------------------
+
+zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
+
+
 mvn clean install
 mvn -q exec:java
-```
 
-which will print the following to your console:
+Ergebnis der Programmausführung ist:
 
-```
-9.0 -> odd
-8.0 -> even
-7.0 -> odd
-6.0 -> even
-5.0 -> odd
-4.0 -> even
-3.0 -> odd
-2.0 -> even
-1.0 -> odd
-```
+--------------------------------------------------------------------------
+parsing: src/main/minimu/test.minimu
+b1 = b2 && true == true
+n == 2.0
+m == 7.0
+--------------------------------------------------------------------------
 
-Also see [this stackoverflow Q&A](http://stackoverflow.com/questions/15610183/if-else-statements-in-antlr-using-listeners).
-
-
-@w3b-net-au made a fork including `for-` statements: https://github.com/w3b-net-au/Mu
