@@ -21,15 +21,20 @@ write "n == " + n;
 write "m == " + m;
 
 zu übersetzen, sind folgende Maven-Befehle im Verzeichnis MiniMu notwendig:
+
 mvn clean install
+
 mvn -q exec:java
 
 Ergebnis der Programmausführung ist:
 
 
 parsing: src/main/minimu/test.minimu
+
 b1 = b2 && true == true
+
 n == 2.0
+
 m == 7.0
 
 
