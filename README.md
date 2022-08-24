@@ -2,7 +2,9 @@ MiniMu
 ======
 
 MiniMu basiert auf Mu (https://github.com/bkiers/Mu), das Bart Kier entwickelt hat.
+
 MiniMu is based upon Mu which has been provided by Bart Kier (https://github.com/bkiers/Mu).
+
 MiniMu implementiert einen Beispielsparser für ANTLR 4, der die Nutzung der  `-visitor` Funktionalität von ANTLR 4 demonstriert. Das Beispiel dient als Basis für meinen Artikel zum Thema ANTLR. 
 Mu ist noch mächtiger, da die Sprache auch if-then-else-Anweisungen und while-Anweisungen unterstützt.
 Wer MiniMu versteht, hat keine Probleme, Mu zu verstehen.
